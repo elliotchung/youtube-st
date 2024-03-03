@@ -3,7 +3,7 @@ import subprocess
 import os
 
 def download_mp3(url):
-    download_dir = ''
+    download_dir = '/mnt/1TB/youtube-st-mp3'
     os.chdir(download_dir)  # Change cwd to the desired directory
     command = f"yt-dlp -x --audio-format mp3 {url}"
     process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
